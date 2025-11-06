@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+
+.contact-body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+}
+
+.main-wrapper {
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #19c3ed 0%, #0c5fba 100%);
+  margin: 12px;
+  padding-bottom: 70px;
+  margin-bottom: 40px;
+}
+
+/* Hero Section */
+.contact {
+  text-align: center;
+  margin: 60px 0 0 0;
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 140px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+.contact-highlight {
+  color: #b5f65d;
+  font-size: 140px;
+  font-weight: 800;
+}
+
+.contact-subtitle {
+  font-size: 40px;
+  font-weight: 950;
+  margin-bottom: 50px;
+  letter-spacing: 2.5px;
+  text-shadow: 0 8px 20px rgba(35, 69, 130, 0.11);
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  .contact-title,
+  .contact-highlight {
+    font-size: 80px;
+  }
+
+  .contact-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-title,
+  .contact-highlight {
+    font-size: 45px;
+  }
+
+  .contact-subtitle {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}

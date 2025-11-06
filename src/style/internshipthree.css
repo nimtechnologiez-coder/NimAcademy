@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+ 
+/* =============================== */
+/* ===== BASE CONTAINER ====== */
+/* =============================== */
+.internship-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 60px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+ 
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+ 
+/* =============================== */
+/* ===== BLUR CARD CONTENT ====== */
+/* =============================== */
+.blur-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  padding: 40px 60px;
+  border-radius: 14px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 650px;
+  transition: all 0.3s ease;
+}
+ 
+.blur-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.apply-btn {
+  background: #4CAF50;
+  color: white;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  padding: 12px 40px;
+  box-shadow: 0 2px 22px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* removes underline */
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #388E3C;
+  color: #c1f479;
+  text-decoration: none; /* no underline on hover */
+}
+
+ 
+.blur-card .blue {
+  color: #19c3ed;
+  font-weight: 800;
+}
+ 
+.blur-card .green {
+  color: #b5f65d;
+  font-weight: 800;
+}
+ 
+.blur-card button {
+  background-color: #b5f65d;
+  color: #0a2342;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ 
+.blur-card button:hover {
+  background-color: #a2ea4f;
+  transform: scale(1.05);
+}
+ 
+/* =============================== */
+/* ===== RESPONSIVE DESIGN ====== */
+/* =============================== */
+ 
+/* 📱 Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .internship-container {
+    height: 240px;
+    margin: 30px 10px;
+    border-radius: 10px;
+  }
+ 
+  .background-image {
+  width: 95%;
+  border-radius: 20px;
+}
+ 
+  .blur-card {
+    width: 75%;
+    padding: 15px 18px ;
+   
+    border-radius: 10px;
+   
+  }
+ 
+  .blur-card h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+ 
+  .blur-card button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+ 
+/* 📲 Large Mobile & Small Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .internship-container {
+    height: 260px;
+    margin: 40px 16px;
+  }
+ 
+  .blur-card {
+    width: 85%;
+    padding: 25px 25px;
+  }
+ 
+  .blur-card h1 {
+    font-size: 1.6rem;
+  }
+ 
+  .blur-card button {
+    font-size: 0.95rem;
+    padding: 10px 24px;
+  }
+}
+ 
+/* 💻 Tablets & Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .internship-container {
+    height: 280px;
+    max-width: 850px;
+  }
+ 
+  .blur-card {
+    width: 75%;
+    padding: 30px 35px;
+  }
+ 
+  .blur-card h1 {
+    font-size: 2rem;
+  }
+ 
+  .blur-card button {
+    font-size: 1rem;
+  }
+}
+ 
+/* 🖥️ Laptops & Desktops (1025px - 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .internship-container {
+    height: 320px;
+    max-width: 950px;
+  }
+ 
+  .blur-card {
+    width: 70%;
+    padding: 35px 50px;
+  }
+ 
+  .blur-card h1 {
+    font-size: 2.3rem;
+  }
+ 
+  .blur-card button {
+    font-size: 1rem;
+    padding: 12px 28px;
+  }
+}
+ 
+/* 🖥️ Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .internship-container {
+    height: 350px;
+    max-width: 1100px;
+  }
+ 
+  .blur-card {
+    width: 65%;
+    padding: 40px 60px;
+  }
+ 
+  .blur-card h1 {
+    font-size: 2.8rem;
+  }
+ 
+  .blur-card button {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+  }
+}
+ 
+ 

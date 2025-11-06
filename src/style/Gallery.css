@@ -1,0 +1,115 @@
+/* 🌟 Gallery Section Base */
+.gallery-wrapper {
+  padding: 70px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* 🌈 Title Styling */
+.gallery-heading {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.gallery-heading .text-blue {
+  color: #003366;
+}
+
+.gallery-heading .text-green {
+  color: #9be44c;
+}
+
+/* 🖼️ Gallery Grid */
+.gallery-grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🧩 Gallery Item */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-card:hover img {
+  transform: scale(1.07);
+  filter: brightness(0.9);
+}
+
+/* Tall image span */
+.gallery-card.tall {
+  grid-row: span 2;
+}
+
+/* ✨ Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Tablets (768px and below) */
+@media (max-width: 992px) {
+  .gallery-heading {
+    font-size: 2rem;
+  }
+
+  .gallery-grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .gallery-card.tall {
+    grid-row: auto;
+  }
+}
+
+/* 📲 Mobile (480px and below) */
+@media (max-width: 600px) {
+  .gallery-wrapper {
+    padding: 50px 15px;
+  }
+
+  .gallery-heading {
+    font-size: 1.7rem;
+    margin-bottom: 35px;
+  }
+
+  .gallery-grid-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .gallery-card {
+    border-radius: 8px;
+  }
+}

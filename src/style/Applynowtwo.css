@@ -1,0 +1,70 @@
+/* Fill to Enroll Section - PIXEL PERFECT */
+.fill-to-enroll-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: none;
+  max-width: 770px;
+  margin: 48px auto 0 auto;  /* Center horizontally */
+  padding: 0;
+  text-align: left;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+ 
+/* Heading styling and color */
+.fill-enroll-heading {
+  color: #19377A;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 26px;
+  margin-top: 0;
+  letter-spacing: 0;
+  line-height: 1.32;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+ 
+/* Highlight green word */
+.enroll-green {
+  color: #9CD947;
+  font-weight: 900;
+}
+ 
+/* Body text styling */
+.fill-enroll-desc {
+  color: #231f35;
+  font-size: 1.18rem;
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 760px;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 5px;
+}
+ 
+/* RESPONSIVE: keep everything readable and centered */
+@media (max-width: 900px) {
+  .fill-to-enroll-card {
+    max-width: 97vw;
+    margin-top: 32px;
+  }
+  .fill-enroll-heading {
+    font-size: 1.11rem;
+    margin-bottom: 17px;
+  }
+  .fill-enroll-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 600px) {
+  .fill-to-enroll-card {
+    padding: 0 3vw;
+    border-radius: 8px;
+    margin-top: 18px;
+  }
+  .fill-enroll-heading {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+ 

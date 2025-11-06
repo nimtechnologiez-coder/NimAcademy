@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
+
+/* 🌟 Base Section */
+.get-in-touch-heading {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+/* 💚 Lime Text */
+.lime-bold {
+  color: #b5f65d;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font scaling */
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+/* 💙 Blue Text */
+.blue-bold {
+  color: #185aad;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font scaling */
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+/* 📱 Small Devices (phones) */
+@media (max-width: 576px) {
+  .get-in-touch-heading {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .lime-bold,
+  .blue-bold {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    letter-spacing: 1px;
+  }
+}
+
+/* 📲 Tablets & Medium Screens */
+@media (min-width: 577px) and (max-width: 992px) {
+  .lime-bold,
+  .blue-bold {
+    font-size: clamp(2.2rem, 4.5vw, 3rem);
+  }
+}
+
+/* 💻 Large Screens & Desktops */
+@media (min-width: 1200px) {
+  .get-in-touch-heading {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .lime-bold,
+  .blue-bold {
+    font-size: 3.5rem;
+  }
+}

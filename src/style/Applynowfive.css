@@ -1,0 +1,223 @@
+/* 🌐 Base Styles */
+.ai-scroll-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  padding: 60px 20px;
+  background: #f8faff;
+  font-family: "Montserrat", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* 🧩 Card Layout */
+.ai-program-card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 1100px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖼️ Image */
+.ai-program-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+/* 📄 Content */
+.ai-program-content {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.ai-program-content h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0c5fba;
+  margin-bottom: 15px;
+}
+
+.ai-program-content p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* 🟩 Unified Button Styles (AI + Explore) */
+.ai-program-btn,
+.ai-explore-btn {
+  background: #eafdca;
+  color: #9ada29;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 1.09rem;
+  border-radius: 25px;
+  padding: 12px 44px;
+  margin: 0 auto;
+  box-shadow: 0 2px 22px rgba(0, 0, 0, 0.09);
+  display: inline-block;
+  text-decoration: none; /* 🔹 removes underline */
+  cursor: pointer;
+  transition: background 0.14s, color 0.14s, transform 0.14s;
+}
+
+.ai-program-btn:hover,
+.ai-explore-btn:hover {
+  background: #178013;
+  color: #c1f479;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* 🖥️ Large Desktop (≥1400px) */
+@media (min-width: 1400px) {
+  .ai-program-card {
+    max-width: 1200px;
+  }
+
+  .ai-program-content {
+    padding: 50px 70px;
+  }
+
+  .ai-program-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .ai-program-content p {
+    font-size: 1.15rem;
+  }
+}
+
+/* 💻 Laptop (992px - 1399px) */
+@media (max-width: 1399px) and (min-width: 992px) {
+  .ai-program-card {
+    max-width: 1000px;
+  }
+
+  .ai-program-content {
+    padding: 35px 45px;
+  }
+
+  .ai-program-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .ai-program-content p {
+    font-size: 1.05rem;
+  }
+}
+
+/* 📱 Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .ai-scroll-stack {
+    padding: 40px 20px;
+  }
+
+  .ai-program-card {
+    max-width: 90%;
+  }
+
+  .ai-program-content {
+    padding: 30px 30px;
+  }
+
+  .ai-program-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .ai-program-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .ai-program-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+/* 📲 Mobile (480px - 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  .ai-scroll-stack {
+    gap: 30px;
+    padding: 30px 10px;
+  }
+
+  .ai-program-card {
+    max-width: 95%;
+  }
+
+  .ai-program-content {
+    padding: 25px 20px;
+  }
+
+  .ai-program-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .ai-program-content p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .ai-program-btn {
+    padding: 9px 22px;
+    font-size: 0.9rem;
+  }
+
+  .ai-program-image {
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+/* 📱 Small Mobile (below 480px) */
+@media (max-width: 479px) {
+  .ai-scroll-stack {
+    gap: 25px;
+    padding: 20px 10px;
+  }
+
+  .ai-program-card {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .ai-program-content {
+    padding: 20px 15px;
+  }
+
+  .ai-program-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .ai-program-content p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    text-align: justify;
+  }
+
+  .ai-program-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+
+  .ai-program-image {
+    width: 200%;
+    border-radius: 12px 12px 0 0;
+  }
+}

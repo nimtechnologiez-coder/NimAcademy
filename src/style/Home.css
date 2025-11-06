@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+
+.home-body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.main-wrapperr {
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #19c3ed 0%, #0c5fba 100%);
+  margin: 10px;
+  min-height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+/* Hero Section */
+.hero {
+  color: #fff;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+.hero-title {
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin-top: 75px;
+}
+
+.hero-highlight {
+  color: #b5f65d;
+  
+}
+
+.hero-subtitle {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 8px 20px rgba(35, 69, 130, 0.11);
+}
+
+/* 🌐 Responsive Adjustments */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 80px;
+  }
+  .hero-subtitle {
+    font-size: 26px;
+  }
+}
+
+/* Large Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+  }
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  .main-wrapper {
+    margin: 8px;
+    border-radius: 15px;
+  }
+}
+
+/* Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  .main-wrapper {
+      min-height: 25vh;
+    
+  }
+ 
+  .hero {
+    padding: 0 10px;
+  }
+}

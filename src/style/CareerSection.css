@@ -1,0 +1,130 @@
+/* 🌟 Main Section */
+.career-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 80px 50px;
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #009fd8 0%, #003d9c 100%);
+  font-family: "Montserrat", Arial, sans-serif;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌟 Heading */
+.career-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.career-heading br {
+  display: none;
+}
+
+/* 🌟 Button */
+.career-btn {
+  display: inline-block;
+  background-color: #9cd947;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 42px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 28px;
+  box-shadow: 0 4px 18px rgba(156, 217, 71, 0.4);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.career-btn:hover {
+  background-color: #84c136;
+  transform: translateY(-3px);
+}
+
+/* ------------------------- */
+/* 📱 Responsive Design */
+/* ------------------------- */
+
+/* 💻 Laptops / Large Tablets (below 1024px) */
+@media (max-width: 1024px) {
+  .career-section {
+    padding: 70px 40px;
+    margin: 50px auto;
+  }
+
+  .career-heading {
+    font-size: 2.3rem;
+    margin-bottom: 32px;
+  }
+
+  .career-btn {
+    font-size: 0.95rem;
+    padding: 12px 36px;
+  }
+}
+
+/* 📲 Tablets (below 768px) */
+@media (max-width: 768px) {
+  .career-section {
+    padding: 60px 30px;
+    border-radius: 22px;
+  }
+
+  .career-heading {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 28px;
+  }
+
+  .career-btn {
+    padding: 12px 32px;
+    font-size: 0.95rem;
+  }
+}
+
+/* 📱 Mobiles (below 600px) */
+@media (max-width: 600px) {
+  .career-section {
+    padding: 50px 15px;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 270px;
+  }
+
+  .career-heading {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+
+  .career-heading br {
+    display: block;
+  }
+
+  .career-btn {
+    width: 80%;
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+}
+
+/* 📱 Extra Small (below 400px) */
+@media (max-width: 400px) {
+  .career-section {
+    padding: 40px 16px;
+    border-radius: 18px;
+  }
+
+  .career-heading {
+    font-size: 1.5rem;
+  }
+
+  .career-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}

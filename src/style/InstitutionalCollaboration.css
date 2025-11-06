@@ -1,0 +1,148 @@
+.institutional-collab-section {
+  padding: 80px 20px;
+  background-color: #f7f9fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.institutional-collab-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease;
+}
+
+.institutional-collab-container:hover {
+  transform: scale(1.01);
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+/* ----- Text & Button Section ----- */
+.institutional-collab-content {
+  flex: 1;
+  min-width: 150px;
+}
+
+.collab-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #003d9c;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-left: 6px solid #a6de43;
+  padding-left: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.collab-desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #125a8f;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.collab-bold {
+  font-size: 1.05rem;
+  color: #003d9c;
+  margin-bottom: 28px;
+  text-align: justify;
+}
+
+.collab-btn {
+  background-color: #185aad;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none; /* remove underline */
+  display: inline-block;
+}
+
+.collab-btn:hover {
+  background-color: #003d9c;
+  transform: translateY(-3px);
+}
+
+/* ----- Image Section ----- */
+.institutional-collab-image-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.institutional-collab-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.institutional-collab-image:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 992px) {
+  .institutional-collab-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .collab-title {
+    font-size: 2rem;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .collab-desc,
+  .collab-bold {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .collab-btn {
+    margin-top: 20px;
+  }
+
+  .institutional-collab-image {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .collab-title {
+    font-size: 1.6rem;
+  }
+
+  .collab-desc,
+  .collab-bold {
+    font-size: 0.95rem;
+  }
+
+  .institutional-collab-container {
+    padding: 30px 20px;
+  }
+
+
+}

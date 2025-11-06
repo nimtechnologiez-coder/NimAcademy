@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* ======================= 🌐 Base Container ======================= */
+.contact-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 32px;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px auto;
+  max-width: 1110px;
+  box-shadow: 0 0 32px rgba(21, 79, 148, 0.11);
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* ======================= ✉️ LEFT: Form Section ======================= */
+.contact-form-section {
+  background: #185aad;
+  color: #fff;
+  flex: 1;
+  padding: 40px 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.contact-form-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-fields .row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.form-fields label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-fields input,
+.form-fields textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-fields textarea {
+  resize: none;
+}
+
+.send-btn {
+  background-color: #96e06a;
+  color: #222;
+  border: none;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 12px;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #b5f65d;
+  transform: translateY(-2px);
+}
+
+/* ======================= 📞 RIGHT: Info Section ======================= */
+.contact-info-section {
+  flex: 1;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+  box-sizing: border-box;
+}
+
+.contact-img {
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-img:hover {
+  transform: scale(1.02);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: linear-gradient(90deg, #1b86d8 70%, #0d3c71 100%);
+  color: #fff;
+  border-radius: 30px;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(27, 134, 216, 0.25);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background: #96e06a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.icon.mail::before { content: "✉️"; }
+.icon.phone::before { content: "📞"; }
+.icon.address::before { content: "📍"; }
+.icon.hours::before { content: "⏰"; }
+
+.info-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.info-block div {
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+/* ======================= 📱 Responsive Design ======================= */
+
+/* ✅ Tablets (768–992px) */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .contact-form-section {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    padding: 32px 28px;
+  }
+
+  .contact-info-section {
+    width: 100%;
+    border-radius: 0 0 32px 32px;
+    padding: 32px 28px;
+  }
+
+  .contact-img {
+    height: 220px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  .info-block {
+    padding: 14px 18px;
+  }
+}
+
+/* ✅ Mobile (up to 576px) */
+@media (max-width: 576px) {
+  .contact-container {
+    flex-direction: column;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+
+  .contact-form-section {
+    padding: 24px 18px;
+  }
+
+  .form-fields .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  .contact-info-section {
+    padding: 24px 18px;
+  }
+
+  .contact-img {
+    height: 180px;
+    border-radius: 14px;
+  }
+
+  .info-block {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px;
+    border-radius: 20px;
+    gap: 1px;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .info-title {
+    font-size: 14px;
+  }
+
+  .info-block div {
+    font-size: 13px;
+  }
+}
+
+/* ✅ Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  .contact-container {
+    max-width: 1150px;
+  }
+
+  .contact-form-section,
+  .contact-info-section {
+    padding: 50px 60px;
+  }
+
+  .contact-img {
+    height: 260px;
+  }
+}

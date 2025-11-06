@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+ 
+.apply-body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+}
+ 
+/* ===== Wrapper Background ===== */
+.main-wrapper {
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #19c3ed 0%, #0c5fba 100%);
+  margin: 12px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+ 
+/* ===== Hero Section ===== */
+.apply {
+  text-align: center;
+  padding: 80px 20px 60px;
+  color: #fff;
+}
+ 
+.apply-title {
+  font-size: 8rem; /* Scales on large screens */
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+ 
+.apply-highlight {
+  color: #b5f65d;
+  font-weight: 800;
+}
+ 
+.apply-subtitle {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  color: #fff;
+  text-shadow: 0 8px 20px rgba(35, 69, 130, 0.11);
+  margin-top: 20px;
+}
+ 
+/* ===== Responsive Design ===== */
+ 
+/* 🖥️ Large Screens (Default) - already good */
+ 
+/* 💻 Laptops & Medium Screens */
+@media (max-width: 1200px) {
+  .apply-title {
+    font-size: 6rem;
+  }
+  .apply-subtitle {
+    font-size: 1.8rem;
+  }
+}
+ 
+/* 📱 Tablets */
+@media (max-width: 992px) {
+  .apply {
+    padding: 60px 15px;
+  }
+  .apply-title {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+  }
+  .apply-subtitle {
+    font-size: 1.6rem;
+  }
+}
+ 
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+  .apply {
+    padding: 50px 15px;
+  }
+  .apply-title {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+  .apply-highlight {
+    font-size: 3rem;
+  }
+  .apply-subtitle {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
+ 
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  .apply {
+    padding: 40px 10px;
+  }
+  .apply-title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+  .apply-highlight {
+    font-size: 2.3rem;
+  }
+  .apply-subtitle {
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+}
+ 
+/* 🧩 Optional: Add image responsiveness */
+.apply img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+ 
+ 

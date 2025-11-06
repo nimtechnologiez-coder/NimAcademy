@@ -1,0 +1,63 @@
+.joinwithus-outer {
+  background: linear-gradient(180deg, #17bdd4 0%, #035dab 100%);
+  border-radius: 22px;
+  max-width: 1120px; 
+  min-height: 320px;
+  width: 100%;
+  margin: 20px auto 30px auto;
+  padding: 42px 0 42px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 38px rgba(0,0,0,0.07);
+}
+
+.joinwithus-inner {
+  width: 100%;
+  text-align: center;
+}
+
+.joinwithus-title {
+  margin: 0;
+  font-size: 4.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 48px;
+}
+
+.join-green {
+  color: #bae955;
+}
+
+.joinwithus-btn {
+  background: #eafdca;
+  color: #9ada29;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 1.09rem;
+  border-radius: 25px;
+  padding: 12px 44px;
+  margin: 0 auto;
+  box-shadow: 0 2px 22px 0 rgba(0,0,0,0.09);
+  display: inline-block;        /* ✅ ensures button behaves like a link */
+  text-decoration: none;        /* ✅ removes underline */
+  cursor: pointer;
+  transition: background 0.14s, color 0.14s;
+}
+
+.joinwithus-btn:hover {
+  background: #178013;
+  color: #c1f479;
+  text-decoration: none;        /* ✅ prevents underline on hover */
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .joinwithus-title { font-size: 2.3rem; }
+  .joinwithus-outer { min-height: 140px; padding: 24px 0; border-radius: 14px; }
+}

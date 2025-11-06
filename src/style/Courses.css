@@ -1,0 +1,23 @@
+.courses-main {
+  width: 100vw;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.courses-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.courses-title-blue { color: #174190; }
+.courses-title-green { color: #b6e656; }
+
+.courses-subtitle {
+  color: #15a4c7;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}

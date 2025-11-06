@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+ 
+/* ========================== */
+/* ====== BASE STYLES ======= */
+/* ========================== */
+ 
+.internship-cards-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+ 
+.internship-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+ 
+/* ====== TEXT SECTION ====== */
+.internship-text {
+  flex: 1;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 500;
+  text-align: justify;
+}
+ 
+/* ====== IMAGE SECTION ====== */
+.internship-img {
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+ 
+.internship-img:hover {
+  transform: scale(1.05);
+}
+ 
+/* ====== HEADING & HIGHLIGHTS ====== */
+.join-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0c5fba;
+  margin-bottom: 18px;
+}
+ 
+.highlight-green {
+  color: #18b884;
+}
+ 
+/* =============================== */
+/* ====== RESPONSIVE DESIGN ====== */
+/* =============================== */
+ 
+/* 📱 Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .internship-cards-wrapper {
+    padding: 30px 10px;
+  }
+ 
+  .internship-row {
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+ 
+  .internship-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 15px;
+  }
+ 
+  .internship-img {
+    max-width: 90%;
+  }
+ 
+  .join-heading {
+    font-size: 1.5rem;
+  }
+}
+ 
+/* 📲 Small Tablets & Large Mobiles (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .internship-cards-wrapper {
+    padding: 40px 15px;
+  }
+ 
+  .internship-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+ 
+  .internship-text {
+    font-size: 1rem;
+  }
+ 
+  .internship-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+ 
+  .join-heading {
+    font-size: 1.7rem;
+  }
+}
+ 
+/* 💻 Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .internship-cards-wrapper {
+    padding: 50px 30px;
+  }
+ 
+  .internship-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+ 
+  .internship-text {
+    flex: 1;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+ 
+  .internship-img {
+    flex: 1;
+    max-width: 300px;
+  }
+ 
+  .join-heading {
+    font-size: 1.8rem;
+  }
+}
+ 
+/* 🖥️ Laptops (1025px - 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .internship-cards-wrapper {
+    padding: 60px 40px;
+  }
+ 
+  .internship-row {
+    flex-direction: row;
+    gap: 40px;
+  }
+ 
+  .internship-text {
+    font-size: 1.1rem;
+  }
+ 
+  .internship-img {
+    max-width: 360px;
+  }
+ 
+  .join-heading {
+    font-size: 2rem;
+  }
+}
+ 
+/* 🖥️ Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .internship-row {
+    gap: 50px;
+  }
+ 
+  .internship-text {
+    font-size: 1.15rem;
+  }
+ 
+  .internship-img {
+    max-width: 520px;
+  }
+ 
+  .join-heading {
+    font-size: 2.3rem;
+  }
+}
+ 
+ 

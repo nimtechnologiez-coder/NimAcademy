@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+
+/* 🌐 Base Setup */
+.next-body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+  min-height: 68vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden; /* Prevents horizontal scroll on all devices */
+}
+
+/* 🎨 Wrapper */
+.main-wrapper {
+  border-radius: 30px;
+  background: linear-gradient(to bottom, #19c3ed 0%, #0c5fba 100%);
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures inner elements never break layout */
+}
+
+/* 🦾 Hero Section */
+.next {
+  color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.next-title {
+  font-size: clamp(3rem, 10vw, 8rem); /* Smooth scaling */
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  white-space: normal; /* Prevents text from overflowing */
+}
+
+.next-highlight {
+  color: #b5f65d;
+}
+
+.next-subtitle {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #fff;
+  text-shadow: 0 8px 20px rgba(35, 69, 130, 0.11);
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* 📱 Small Mobiles */
+@media (max-width: 480px) {
+  .main-wrapper {
+    padding: 120px 15px; 
+  }
+
+  .next-title {
+    font-size: 2.5rem;
+    word-spacing: 1px;
+    margin-bottom: 60px;
+  }
+
+  .next-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 95px;
+  }
+}
+
+/* 📲 Large Mobiles & Small Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .next-title {
+    font-size: 3.5rem;
+  }
+
+  .next-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* 💻 Tablets & Small Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .next-title {
+    font-size: 5rem;
+  }
+
+  .next-subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* 🖥️ Large Screens */
+@media (min-width: 1440px) {
+  .next-title {
+    font-size: 9rem;
+  }
+
+  .next-subtitle {
+    font-size: 2.8rem;
+  }
+}

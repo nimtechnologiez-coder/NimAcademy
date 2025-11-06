@@ -1,0 +1,107 @@
+/* 🌟 Container */
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* 🌟 Card Layout */
+.benefits-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: #f9fbff;
+  border-radius: 22px;
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.08);
+  padding: 40px 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ All cards same direction (text left, image right) */
+.benefits-card.reverse {
+  flex-direction: row;
+}
+
+/* 🌟 Text Content */
+.benefits-content {
+  flex: 1;
+}
+
+.benefits-content h3 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.benefits-blue {
+  color: #004aad;
+}
+
+.benefits-green {
+  color: #a6de43;
+}
+
+.benefits-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌟 Image Section */
+.benefits-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.benefits-image {
+  width: 55%;
+  max-width: 400px;
+  border-radius: 22px;
+  object-fit: cover;
+  margin-right: 40px; /* move slightly left toward text */
+  transition: transform 0.3s ease;
+}
+
+.benefits-image:hover {
+  transform: scale(1.03);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+  .benefits-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .benefits-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .benefits-content p {
+    font-size: 1rem;
+  }
+
+  .benefits-image-container {
+    justify-content: center;
+  }
+
+  .benefits-image {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+}

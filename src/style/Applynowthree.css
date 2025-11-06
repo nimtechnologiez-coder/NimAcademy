@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+ 
+/* 🌐 Global Styles */
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #f8faff;
+}
+ 
+/* ======== Enrollment Section (Wrapper) ======== */
+.enroll-section {
+   min-height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f9fc; /* optional light background */
+  padding: 40px;
+   max-width: 100vw;
+    overflow-x: hidden;
+}
+ 
+/* 🚫 Remove horizontal scrollbar for mobile and tablet */
+@media (max-width: 992px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+/* ======== Left Image (Desktop View) ======== */
+.enroll-image {
+  width: 480px;
+  max-width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+ 
+.enroll-image:hover {
+  transform: scale(1.03);
+}
+ 
+/* ======== Form Card ======== */
+.enroll-form-card {
+  background: #05469c;
+  border-radius: 26px;
+  padding: 40px 36px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-sizing: border-box;
+  color: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+ 
+/* ======== Inputs ======== */
+.enroll-input {
+  padding: 18px 20px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #19377a;
+  background-color: #fff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+ 
+.enroll-input:focus {
+  border: 2px solid #9cd947;
+  background-color: #f7fcff;
+  box-shadow: 0 0 8px rgba(156, 217, 71, 0.4);
+}
+ 
+/* Dropdown */
+select.enroll-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 25 25' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M8.12 10.34l4.88 4.88 4.88-4.88a1 1 0 0 1 1.41 1.41l-5.59 5.59a1 1 0 0 1-1.41 0l-5.59-5.59a1 1 0 1 1 1.41-1.41z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 21px 21px;
+}
+ 
+/* ======== Submit Button ======== */
+.enroll-submit-btn {
+  background: #fff;
+  color: #19377a;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 14px 0;
+  border: none;
+  font-size: 1.06rem;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.25s ease;
+  align-self: center;
+}
+ 
+.enroll-submit-btn:hover {
+  background: #9cd947;
+  color: #fff;
+  transform: translateY(-2px);
+}
+ 
+/* ======== Responsive Design ======== */
+ 
+/* 💻 Laptops (max 1200px) */
+@media (max-width: 1200px) {
+  .enroll-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 50px;
+  }
+  .enroll-image {
+    width: 420px;
+  }
+}
+ 
+/* 📱 Tablets (max 992px) */
+@media (max-width: 992px) {
+  .enroll-section {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+  .enroll-image {
+    width: 85%;
+    max-width: 440px;
+  }
+  .enroll-form-card {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+ 
+/* 📱 Mobiles (max 768px) */
+@media (max-width: 768px) {
+  .enroll-section {
+    padding: 50px 20px;
+  }
+  .enroll-image {
+    width: 100%;
+    border-radius: 18px;
+  }
+  .enroll-form-card {
+    border-radius: 18px;
+    padding: 28px 18px;
+  }
+  .enroll-input {
+    font-size: 1rem;
+    padding: 14px;
+  }
+  .enroll-submit-btn {
+    width: 100%;
+    border-radius: 6px;
+    padding: 12px 0;
+  }
+}
+ 
+/* 📱 Small Phones (max 480px) */
+@media (max-width: 480px) {
+  .enroll-section {
+    padding: 40px 10px;
+  }
+  .enroll-form-card {
+    border-radius: 12px;
+    padding: 22px 12px;
+  }
+  .enroll-input {
+    font-size: 0.95rem;
+    padding: 12px 10px;
+  }
+  .enroll-submit-btn {
+    font-size: 0.9rem;
+    padding: 11px 0;
+  }
+ 
+}
+ 
+ 
+ 
+ 
+/* 🌐 Enrollment Section Wrapper */
+.enroll-section {
+  min-height: 100vh; /* full height of viewport */
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  background: #f7f9fc;
+  padding: 40px;
+  box-sizing: border-box;
+}
+ 
+/* 📋 Form Card */
+.enroll-form-card {
+  background: #05469c;
+  border-radius: 26px;
+  padding: 40px 36px;
+  width: 90%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  color: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  margin: 0 auto; /* ensures it's centered horizontally */
+}
+ 
+/* ======== Responsive Adjustments ======== */
+@media (max-width: 992px) {
+  .enroll-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 20px;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .enroll-section {
+    justify-content: flex-start;
+    padding: 50px 15px;
+  }
+ 
+  .enroll-form-card {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+}
+ 
+ 
+ 
