@@ -17,9 +17,9 @@ export default function Footer() {
         <div className="footer-social">
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaYoutube /></a>
+          <a href="https://www.linkedin.com/company/nim-academy"><FaLinkedinIn /></a>
+          <a href="https://www.instagram.com/nim_academy/"><FaInstagram /></a>
+          <a href="https://www.youtube.com/channel/UCTjUuiaIyNPCtgNKa99A8Bg"><FaYoutube /></a>
         </div>
       </div>
 

@@ -11,12 +11,8 @@ function AboutSection() {
           Why <span className="highlight">Nim</span> Academy?
         </h2>
         <p>
-          NIM Academy empowers learners to become skilled IT professionals
-          through practical, high-quality, and industry-aligned training. As the
-          professional training and internship division of Nim Technologies, we
-          focus on bridging the gap between classroom learning and real-world
-          needs by offering structured internship programs, expert-led sessions,
-          and modern teaching approaches that build a future-ready workforce.
+         Nim Academy – Best Software Training Centre in Nagercoil, empowers learners through professional software courses in Nagercoil designed to build real-world IT skills.
+         As part of Nim Technologies, we bridge the gap between academics and industry with expert-led training, structured internships, and hands-on learning that prepare students to become future-ready professionals.
         </p>
       
 <button className="explore-btn">
